@@ -1,24 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html>
+  <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>students list</title>
-</head>
-<body>
-    <center>
-        <h1>GESTION STUDENTS</h1>
-    </center>
-    <center>
-    <table border="1" class="studentlist">     
-    </table>
-</center>
-
-
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="studentapp.js"></script>
-</body>
+    <title>CRUD-APP</title>
+  </head>
+  <body>
+    <header>
+    <h1 class="heading">CRUD example in Ajax, jQuery, PHP</h1>
+  </header>
+    <div class="add-form">
+      <h2 class="addForm-head">Add-Form</h2>
+      <label>Name</label>
+      <input type="text" name="" value="" class="studentName"><br>
+      <label>Father's name</label>
+      <input type="text" name="" value="" class="studentFname"><br>
+      <label>Rollno</label>
+      <input type="text" name="" value="" class="studentRollno"><br>
+      <label>Degree</label>
+      <input type="text" name="" value="" class="studentDegree"><br>
+      <label>Branch</label>
+      <input type="text" name="" value="" class="studentBranch"><br>
+      <input type="submit" name="" value="Add student" class="submit-student">
+    </div>
+    <table border="1" class="studentsList">
+        <td class="stdname"></td>
+        <td class="stdFname"></td>
+        <td class="stdrollno"></td>
+        <td class="stddegree"></td>
+        <td class="stdbranch"></td>
+        <input type="hidden" name="" value="" class="stdid">
+    </ul>
+  </body>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="studentapp.js"></script>
 </html>
